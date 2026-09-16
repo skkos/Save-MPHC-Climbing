@@ -135,6 +135,14 @@ h3.grp{
 }
 h3.grp:first-of-type{margin-top:22px}
 
+/* ---------- mission quote ---------- */
+.mission{margin-top:26px}
+.mission p{margin:0 0 12px}
+.mission .quote{
+  border-left:3px solid var(--signal);background:var(--panel);
+  padding:16px 20px;margin:0 0 12px;font-size:17px;line-height:1.55;max-width:none;
+}
+
 /* ---------- asks ---------- */
 .asks{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:8px}
 .ask{background:var(--panel);padding:18px 20px;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start}
@@ -194,10 +202,12 @@ ol.panes .spacer{flex:1 1 auto;min-height:8px}
 /* ---------- contacts ---------- */
 .who{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:8px}
 .who .r{background:var(--panel);padding:15px 18px;display:grid;grid-template-columns:1fr auto;gap:8px 18px;align-items:center}
+.who .r.lead{box-shadow:inset 3px 0 0 var(--signal)}
 .who .nm{font-weight:700;font-size:16.5px;line-height:1.3}
 .who .rl{font-size:14px;color:var(--muted);margin-top:2px;line-height:1.4}
 .who .cx{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-top:5px;overflow-wrap:anywhere}
 .who .cx a{color:var(--mint)}
+.who .cx .tag2{color:var(--muted);opacity:.75}
 @media(max-width:560px){.who .r{grid-template-columns:1fr}}
 
 /* ---------- contact ---------- */
@@ -269,7 +279,7 @@ footer p{max-width:66ch}
     <li>
       <div class="n"></div>
       <h3>Send one email</h3>
-      <p>Contact any of the four elected officials below. One paragraph in your own words beats a form letter, and staff count constituents. Say where you live, why this gym matters to you, and ask them to contact Related.</p>
+      <p>Start with <b>Jason Bachonski</b>, the general manager of Manhattan Plaza — he's the person closest to this decision. Then the elected officials below. One paragraph in your own words beats a form letter, and staff count constituents.</p>
       <p class="fine"><b>Please cc savemphc@gmail.com</b> so we can see what's gone out and follow up on replies.</p>
       <div class="spacer"></div>
       <a class="btn ghost" href="#contact">Who to write to</a>
@@ -278,7 +288,7 @@ footer p{max-width:66ch}
       <div class="n"></div>
       <h3>Send this to one climber or friend </h3>
       <p>Preserving MPHC is a win for all climbers from all backgrounds.</p>
-      <p class="fine">Send this to someone who cheered you on the wall. Or someone who is passionate about community and accessibiliy. Or someone who overcame a challenge with you. Or someone who believed in you.</p>
+      <p class="fine">Send this to someone who cheered you on the wall. Or someone who is passionate about community and accessibility. Or someone who overcame a challenge with you. Or someone who believed in you.</p>
       <div class="spacer"></div>
       <a class="btn ghost" href="#share">Copy the post</a>
     </li>
@@ -308,11 +318,11 @@ footer p{max-width:66ch}
     <div class="fact"><div class="k sm">Related<br>Companies</div><div class="v">Owns Manhattan Plaza, the 1,689-apartment complex the gym sits inside, built with public support to house working artists. The health club that the climbing gym is a part of is one of its amenities.</div></div>
   </div>
 
-  <p style="margin-top:26px">We urge MPHC to stay true to its own stated mission. 
-      <div class="count">
-    MPHC's own About page states MPHC <b>"has built its reputation on being an affordable place in the community where people from all walks of life can go to maintain their health &amp; wellness."</b> 
-      <div class="count">
-        The MPHC climbing gym is a vital service to the community. It not only supports climbers from all walks of life, but also hosts two high school programs and a summer camp for the youth living in Manhattan Plaza.</p>
+  <div class="mission">
+    <p>We urge MPHC to stay true to its own stated mission.</p>
+    <p class="quote">MPHC's own About page states MPHC <b>"has built its reputation on being an affordable place in the community where people from all walks of life can go to maintain their health &amp; wellness."</b></p>
+    <p>The MPHC climbing gym is a vital service to the community. It not only supports climbers from all walks of life, but also hosts two high school programs and a summer camp for the youth living in Manhattan Plaza.</p>
+  </div>
 </section>
 
 <section>
@@ -336,8 +346,23 @@ footer p{max-width:66ch}
 
 <section id="contact">
   <h2>Who to write to</h2>
-  <p class="note">All four represent Hell's Kitchen. Keep it short: say where you live, why this gym matters to you, and ask them to contact Related about why it's closing and whether the space could be leased to another climbing operator. <b>Cc savemphc@gmail.com on whatever you send</b>. It's how we keep track.</p>
+  <p class="note"><b>Start at the top.</b> Jason Bachonski runs Manhattan Plaza for Related — he is the person closest to this decision, and the one who can answer why. The four elected officials below all represent Hell's Kitchen; they are how we make sure the question gets answered. Keep it short: say where you live, why this gym matters to you, and ask whether the space could be leased to another climbing operator instead of closed.</p>
+  <p class="note"><b>Please be civil.</b> These are people doing their jobs. We want an answer, not a fight — and a polite email is the one that gets forwarded. <b>Cc savemphc@gmail.com on whatever you send</b> so we can keep track.</p>
   <div class="who">
+    <div class="r lead">
+      <div>
+        <div class="nm">Jason Bachonski</div>
+        <div class="rl">General Manager, Manhattan Plaza (Related) — he runs this building. Start here.</div>
+        <div class="cx"><a href="mailto:jbachonski@related.com?subject=MPHC%20climbing%20gym">jbachonski@related.com</a> · <a href="tel:+12129710660">(212) 971-0660</a> <span class="tag2">(management office)</span></div>
+      </div>
+    </div>
+    <div class="r">
+      <div>
+        <div class="nm">Related Companies</div>
+        <div class="rl">Owner of Manhattan Plaza — the decision sits here, not with the gym staff.</div>
+        <div class="cx"><a href="mailto:communications@related.com">communications@related.com</a> · <a href="tel:+12128011000">(212) 801-1000</a></div>
+      </div>
+    </div>
     <div class="r">
       <div>
         <div class="nm">State Senator Erik Bottcher</div>
@@ -364,13 +389,6 @@ footer p{max-width:66ch}
         <div class="nm">Borough President Brad Hoylman-Sigal</div>
         <div class="rl">Manhattan Borough President</div>
         <div class="cx"><a href="https://www.manhattanbp.nyc.gov/" target="_blank" rel="noopener">manhattanbp.nyc.gov</a> · <a href="tel:+12126698300">(212) 669-8300</a></div>
-      </div>
-    </div>
-    <div class="r">
-      <div>
-        <div class="nm">Related Companies</div>
-        <div class="rl">Owner of Manhattan Plaza — they make this decision, not the gym staff. Be civil please!</div>
-        <div class="cx"><a href="mailto:communications@related.com">communications@related.com</a> · <a href="tel:+12128011000">(212) 801-1000</a></div>
       </div>
     </div>
   </div>
