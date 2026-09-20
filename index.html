@@ -54,16 +54,31 @@ a{color:var(--mint);text-underline-offset:3px}
 a:focus-visible,button:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
 p{max-width:62ch}
 
-/* ---------- top banner ---------- */
+/* ---------- top banners ---------- */
+.stickywrap{position:sticky;top:0;z-index:20}
+.protestbar{
+  background:var(--signal);color:var(--ground);
+  margin:0 -20px;padding:11px 20px;
+  font-size:15px;line-height:1.45;font-weight:600;
+}
+.protestbar b{
+  font-family:var(--mono);font-weight:700;font-size:12.5px;
+  letter-spacing:.14em;text-transform:uppercase;margin-right:4px;
+}
+.protestbar .sep2{opacity:.55;margin:0 7px}
 .topbar{
-  position:sticky;top:0;z-index:20;
   background:var(--panel);border-bottom:2px solid var(--signal);
   margin:0 -20px;padding:12px 20px;
   font-size:15px;line-height:1.5;color:var(--ink);
 }
 .topbar a{color:var(--signal);font-weight:700;text-decoration:none;overflow-wrap:anywhere}
 .topbar a:hover{text-decoration:underline}
-@media(max-width:560px){.topbar{font-size:14px}}
+@media(max-width:560px){
+  .topbar{font-size:14px;padding:10px 20px}
+  .protestbar{font-size:13.5px;padding:9px 20px;line-height:1.4}
+  .protestbar b{font-size:11.5px;letter-spacing:.1em}
+  .protestbar .sep2{margin:0 5px}
+}
 
 /* ---------- hero ---------- */
 .hero{padding:40px 0 34px}
@@ -241,8 +256,13 @@ footer p{max-width:66ch}
 
 <div class="wrap">
 
-<div class="topbar">
-  Want to join the effort, or have questions? Contact us at <a href="mailto:savemphc@gmail.com?subject=MPHC%20climbing%20gym">savemphc@gmail.com</a> | Sign the petition <a href="https://www.change.org/p/save-mphc-climbing-gym-from-closure">here</a>
+<div class="stickywrap">
+  <div class="protestbar">
+    <b>Protest</b> Saturday, September 26th at 11:00am<span class="sep2">·</span>outside MPHC, 482 West 43rd Street
+  </div>
+  <div class="topbar">
+    Want to join the effort, or have questions? Contact us at <a href="mailto:savemphc@gmail.com?subject=MPHC%20climbing%20gym">savemphc@gmail.com</a> | Sign the petition <a href="https://www.change.org/p/save-mphc-climbing-gym-from-closure">here</a>
+  </div>
 </div>
 
 <header class="hero">
@@ -250,12 +270,12 @@ footer p{max-width:66ch}
   <h1>New York's oldest climbing gym <span>closes Sept 30</span></h1>
   <p class="sub">On September 30, 2026 it will close forever without your help. <b>It's up to us to find another way.</b></p>
   <div class="count">
-    <div><div class="n hot" id="d-close">21</div><div class="l">Days left</div></div>
+    <div><div class="n hot" id="d-close">10</div><div class="l">Days left</div></div>
     <div><div class="n">$49</div><div class="l">A month to climb<br>vs $100+ elsewhere</div></div>
     <div><div class="n">34</div><div class="l">Years open</div></div>
   </div>
   <!--STATUS:START-->
-  <p class="status"><b>974</b> people have signed the petition<span class="sep">·</span>updated 18 September</p>
+  <p class="status"><b>1,105</b> people have signed the petition<span class="sep">·</span>updated 20 September</p>
   <!--STATUS:END-->
 </header>
 
@@ -272,11 +292,11 @@ footer p{max-width:66ch}
     </li>
     <li>
       <div class="n"></div>
-      <h3>Sign the pricing pledge</h3>
-      <p>Membership is $49 a month, against $100+ almost anywhere else in the city. The form asks one thing: <b>how much more would you pay to keep this gym open?</b> $10, $25, $50, or your own number. Names against amounts turn "we love this place" into something a landlord can read.</p>
-      <p class="fine"><b>Not a contract, no obligation.</b> No payment or card details are collected now or later, and you can withdraw your name any time.</p>
+      <h3>Sign the boycott pledge</h3>
+      <p>Related is planning to replace the MPHC climbing gym with an expensive "tennis simulator" not available to members, while at the same time raising monthly fees by $40. We are calling for a boycott of the Manhattan Plaza Health Club and the Racquet Club to protest these changes.</p>
+      <p class="fine"><b>A pledge, not a cancellation.</b> Nothing happens automatically, and you can withdraw your name any time.</p>
       <div class="spacer"></div>
-      <a class="btn" href="https://forms.gle/QeXEF3GZtaA2TqLY6" target="_blank" rel="noopener">Sign the pledge</a>
+      <a class="btn" href="https://forms.gle/AHoRYaT5kbeQuk7i6" target="_blank" rel="noopener">Sign the boycott pledge</a>
     </li>
     <li>
       <div class="n"></div>
@@ -315,7 +335,7 @@ footer p{max-width:66ch}
   <h3 class="grp">What's happening</h3>
   <div class="facts">
     <div class="fact"><div class="k hot">Sept 30</div><div class="v">The day it closes permanently. Members and staff were told by email with less than a month's notice. <b>No reason has been given publicly</b>, to anyone, as far as we can tell.</div></div>
-    <div class="fact"><div class="k sm">Reportedly,<br>a tennis<br>simulator</div><div class="v">What members have heard is replacing it, in a complex that already has five rooftop tennis courts. <em>Unconfirmed by the club or its owner. We've asked, and we'd genuinely like to be wrong.</em></div></div>
+    <div class="fact"><div class="k sm">Reportedly,<br>a tennis<br>simulator</div><div class="v">What members have heard is replacing it, in a complex that already has five rooftop tennis courts. <em>Not publicly confirmed by the club or its owner.</em></div></div>
   </div>
 
   <h3 class="grp">Who decides</h3>
@@ -336,7 +356,7 @@ footer p{max-width:66ch}
   <div class="asks">
     <div class="ask">
       <div class="m">1</div>
-      <div><h3>Keep the gym open, and explore every way of doing so.</h3><p>If the wall doesn't earn enough, the price hasn't been revisited in years — members have already pledged to pay more. And if MPHC can't run it, someone else can: the wall, the anchors, the holds and the members are already here, and New York has several climbing gym companies. Leasing the space to one of them means Related collects rent instead of running a gym, and the wall stays.</p></div>
+      <div><h3>Keep the gym open, and explore every way of doing so.</h3><p>If the wall doesn't earn enough, the price hasn't been revisited in years. And if MPHC can't run it, someone else can: the wall, the anchors, the holds and the members are already here, and New York has several climbing gym companies. Leasing the space to one of them means Related collects rent instead of running a gym, and the wall stays.</p></div>
     </div>
     <div class="ask">
       <div class="m alt">2</div>
@@ -347,7 +367,7 @@ footer p{max-width:66ch}
 
 <section id="contact">
   <h2>Who to write to</h2>
-  <p class="note"><b>Start at the top.</b> Jason Bachonski runs Manhattan Plaza for Related. He is the person closest to this decision, and the one who can answer why. The four elected officials below all represent Hell's Kitchen; they are how we make sure the question gets answered. Keep it short: say where you live, why this gym matters to you, and urge for the climbing gym to remain open or at least a delay in favor of finding another solution.</p>
+  <p class="note"><b>Start at the top.</b> Jason Bachonski runs Manhattan Plaza for Related, the owner. Scott Salmon runs MPHC itself. Between them they are closest to this decision and best placed to answer why. The four elected officials below all represent Hell's Kitchen; they are how we make sure the question gets answered. Keep it short: say where you live, why this gym matters to you, and urge for the climbing gym to remain open or at least a delay in favor of finding another solution.</p>
   <p class="note"><b>Cc savemphc@gmail.com on whatever you send</b> so we can keep track.</p>
   <p class="note"><b>Please be civil.</b></p> 
   <div class="who">
@@ -356,6 +376,13 @@ footer p{max-width:66ch}
         <div class="nm">Jason Bachonski</div>
         <div class="rl">General Manager, Manhattan Plaza (Related) — he runs this building. Start here.</div>
         <div class="cx"><a href="mailto:jbachonski@related.com?subject=MPHC%20climbing%20gym">jbachonski@related.com</a> · <a href="tel:+12129710660">(212) 971-0660</a> <span class="tag2">(management office)</span></div>
+      </div>
+    </div>
+    <div class="r lead">
+      <div>
+        <div class="nm">Scott Salmon</div>
+        <div class="rl">General Manager, Manhattan Plaza Health Club — he runs the club day to day.</div>
+        <div class="cx"><a href="mailto:SSalmon@mphc.com?subject=MPHC%20climbing%20gym">SSalmon@mphc.com</a> · <a href="tel:+16465904411">(646) 590-4411</a> <span class="tag2">(club front desk)</span></div>
       </div>
     </div>
      <div class="r">
@@ -400,7 +427,7 @@ The climbing community is losing a historic fixture and a truly rare gem. MPHC i
 We're asking the owner to keep it open or at least delay and tell us why. Your voice is the only thing that can save it.
 
 Sign the petition: change.org/p/save-mphc-climbing-gym-from-closure
-Sign the pricing pledge: forms.gle/QeXEF3GZtaA2TqLY6</pre>
+Sign the boycott pledge: forms.gle/AHoRYaT5kbeQuk7i6</pre>
     <button class="btn" id="copy">Copy the post</button>
   </div>
 </section>
@@ -427,7 +454,7 @@ Sign the pricing pledge: forms.gle/QeXEF3GZtaA2TqLY6</pre>
   <div class="disclaim">
     <p><b>Who we are.</b> This page is made by members of the MPHC climbing community. It is not affiliated with, authorised by, or run by Manhattan Plaza Health Club or Related Companies, and nothing here is a statement from either of them.</p>
   </div>
-  <p><b>On accuracy.</b> The 1992 opening date, the $49 rate and the free Friday women's session come from members and from the club's own notice that the gym has run for 34 years. The tennis simulator is what members have been told and has not been confirmed by anyone official — we've asked. If any of this is wrong we want to correct it, so tell us rather than repeating it.</p>
+  <p><b>On accuracy.</b> The 1992 opening date, the $49 rate and the free Friday women's session come from members and from the club's own notice that the gym has run for 34 years. The tennis simulator is what members have been told and has not been publicly confirmed by the club or its owner. If any of this is wrong we want to correct it, so tell us rather than repeating it.</p>
   <p>The closure date is from MPHC's own <a href="https://mphc.com/climbing-gym-closure-september-30/" target="_blank" rel="noopener">closure notice</a>. Ownership of Manhattan Plaza per <a href="https://www.relatedaffordable.com/our-company/properties/manhattan-plaza" target="_blank" rel="noopener">Related Affordable</a>. Petition by Oscar Gralnick on <a href="https://www.change.org/p/save-mphc-climbing-gym-from-closure" target="_blank" rel="noopener">Change.org</a>.</p>
 </footer>
 
