@@ -77,11 +77,17 @@ p{max-width:62ch}
 }
 .topbar a{color:var(--signal);font-weight:700;text-decoration:none;overflow-wrap:anywhere}
 .topbar a:hover{text-decoration:underline}
+@media(max-width:700px){
+  .protestbar .morewrap{display:none}
+  .protestbar a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+}
 @media(max-width:560px){
   .topbar{font-size:14px;padding:10px 20px}
-  .protestbar{font-size:13.5px;padding:9px 20px;line-height:1.4}
-  .protestbar b{font-size:11.5px;letter-spacing:.1em}
-  .protestbar .sep2{margin:0 5px}
+  .protestbar{font-size:13px;padding:8px 20px;line-height:1.38}
+  .protestbar b{font-size:11px;letter-spacing:.08em;margin-right:2px}
+  .protestbar .sep2{margin:0 4px}
+  .protestbar .morewrap{display:none}
+  .protestbar a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
 }
 
 /* ---------- hero ---------- */
@@ -271,7 +277,7 @@ footer p{max-width:66ch}
 
 <div class="stickywrap">
   <div class="protestbar">
-    <a href="#protest"><b>Protest</b> Saturday, September 26th at 11:00am<span class="sep2">·</span><span class="more">Our demands →</span></a>
+    <a href="#protest"><b>Protest</b> Saturday, September 26th at 11:00am<span class="sep2">·</span>outside MPHC, 482 West 43rd Street<span class="morewrap"><span class="sep2">·</span><span class="more">Our demands →</span></span></a>
   </div>
   <div class="topbar">
     Want to join the effort, or have questions? Contact us at <a href="mailto:savemphc@gmail.com?subject=MPHC%20climbing%20gym">savemphc@gmail.com</a> | Sign the petition <a href="https://www.change.org/p/save-mphc-climbing-gym-from-closure">here</a>
