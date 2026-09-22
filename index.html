@@ -66,6 +66,10 @@ p{max-width:62ch}
   letter-spacing:.14em;text-transform:uppercase;margin-right:4px;
 }
 .protestbar .sep2{opacity:.55;margin:0 7px}
+.protestbar a{color:var(--ground);text-decoration:none;display:block}
+.protestbar a:hover{text-decoration:underline}
+.protestbar .more{font-family:var(--mono);font-size:11.5px;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;opacity:.8;white-space:nowrap}
 .topbar{
   background:var(--panel);border-bottom:2px solid var(--signal);
   margin:0 -20px;padding:12px 20px;
@@ -207,7 +211,7 @@ ol.panes .spacer{flex:1 1 auto;min-height:8px}
 .btn.ghost:hover{background:var(--panel-2);color:var(--mint)}
 .btn.done{background:var(--mint);color:var(--ground)}
 
-/* ---------- party ---------- */
+/* ---------- party / protest card ---------- */
 .party{border:2px solid var(--signal);background:var(--panel);padding:24px 24px 26px;margin-top:8px}
 .party .when{
   font-family:var(--display);font-size:clamp(26px,5vw,38px);line-height:1;
@@ -215,6 +219,15 @@ ol.panes .spacer{flex:1 1 auto;min-height:8px}
 }
 .party p{margin:0;font-size:16.5px}
 .party p+p{margin-top:11px}
+.party .where3{font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted);margin:-4px 0 14px}
+.party ol{margin:12px 0 0;padding-left:22px;font-size:16.5px;line-height:1.5}
+.party ol li{margin-bottom:8px}
+.party ol li::marker{color:var(--signal);font-weight:700}
+.party .rally{font-family:var(--display);font-weight:400;text-transform:uppercase;
+  font-size:clamp(20px,4vw,28px);line-height:1.05;color:var(--signal);margin-top:20px}
+#protest{padding-top:34px;scroll-margin-top:118px}
+@media(max-width:560px){#protest{scroll-margin-top:104px}}
 
 /* ---------- contacts ---------- */
 .who{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:8px}
@@ -258,7 +271,7 @@ footer p{max-width:66ch}
 
 <div class="stickywrap">
   <div class="protestbar">
-    <b>Protest</b> Saturday, September 26th at 11:00am<span class="sep2">·</span>outside MPHC, 482 West 43rd Street
+    <a href="#protest"><b>Protest</b> Saturday, September 26th at 11:00am<span class="sep2">·</span><span class="more">Our demands →</span></a>
   </div>
   <div class="topbar">
     Want to join the effort, or have questions? Contact us at <a href="mailto:savemphc@gmail.com?subject=MPHC%20climbing%20gym">savemphc@gmail.com</a> | Sign the petition <a href="https://www.change.org/p/save-mphc-climbing-gym-from-closure">here</a>
@@ -270,14 +283,29 @@ footer p{max-width:66ch}
   <h1>New York's oldest climbing gym <span>closes Sept 30</span></h1>
   <p class="sub">On September 30, 2026 it will close forever without your help. <b>It's up to us to find another way.</b></p>
   <div class="count">
-    <div><div class="n hot" id="d-close">10</div><div class="l">Days left</div></div>
+    <div><div class="n hot" id="d-close">8</div><div class="l">Days left</div></div>
     <div><div class="n">$49</div><div class="l">A month to climb<br>vs $100+ elsewhere</div></div>
     <div><div class="n">34</div><div class="l">Years open</div></div>
   </div>
   <!--STATUS:START-->
-  <p class="status"><b>1,105</b> people have signed the petition<span class="sep">·</span>updated 20 September</p>
+  <p class="status"><b>1,212</b> people have signed the petition<span class="sep">·</span>updated 22 September</p>
   <!--STATUS:END-->
 </header>
+
+<section id="protest">
+  <div class="party">
+    <div class="when">Saturday 26 September &middot; 11:00am</div>
+    <p class="where3">Outside MPHC &middot; 482 West 43rd Street</p>
+    <p>We are rallying to demand that the building management, Related Companies, respect the voices of the residents and members who make Manhattan Plaza the inclusive community that it is. From replacing the city's oldest climbing gym with a luxury tennis simulator to increasing membership fees and neglecting long-overdue facility repairs like the women's sauna, Related has shown that it prioritizes profits over people.</p>
+    <p>As a collective community, we demand that Related Companies and ARCH Management:</p>
+    <ol>
+      <li>Keep the historic MPHC climbing gym open</li>
+      <li>Stop MPHC membership cost increases</li>
+      <li>Establish two permanent seats on the decision-making board for representatives of the MPHC and Manhattan Plaza communities to voice community feedback, approve major changes, and ensure critical maintenance is carried out.</li>
+    </ol>
+    <p class="rally">True power lies in the community!</p>
+  </div>
+</section>
 
 <section>
   <h2>Four things you can do today</h2>
